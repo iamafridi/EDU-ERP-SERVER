@@ -1,0 +1,38 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# environment files (secrets)
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel/
+
+# typescript
+*.tsbuildinfo
+
+# testing
+coverage/
+
+# AI-generated artifacts
+AGENTS.md
+CLAUDE.md
+SKILL.md
+.mimocode/
+
+# os
+.DS_Store
+Thumbs.db
+Desktop.ini
+nul
+
+# logs
+*.log
+npm-debug.log*
+
+# backups
+backups/
