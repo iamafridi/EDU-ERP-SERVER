@@ -1,0 +1,2 @@
+export const SEARCH_LIMIT_PER_CATEGORY = 10;
+export const SEARCH_TOTAL_LIMIT = 30;
