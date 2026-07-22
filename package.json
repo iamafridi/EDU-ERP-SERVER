@@ -4,8 +4,10 @@
   "description": "Backend API for EDU-ERP — a comprehensive college management system",
   "main": "index.js",
   "scripts": {
+    "start": "node ./dist/server.js",
     "start:prod": "node ./dist/server.js",
     "start:dev": "ts-node-dev --respawn --transpile-only -r dotenv/config src/server.ts",
+    "postinstall": "tsc",
     "seed": "ts-node-dev --transpile-only -r dotenv/config src/scripts/seed.ts",
     "db:backup": "mongodump --uri=\"$DATABASE_URL\" --out=./backups/$(date +%Y-%m-%d)",
     "db:restore": "mongorestore --uri=\"$DATABASE_URL\"",
